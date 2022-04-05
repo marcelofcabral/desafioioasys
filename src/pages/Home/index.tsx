@@ -29,8 +29,6 @@ import Book from "../../components/Book";
 import BookModal from "../../components/BookModal";
 
 const Home: React.FC = () => {
-  console.log("render");
-
   const userData: UserData = useLocation().state as UserData;
   const navigate = useNavigate();
 
@@ -109,10 +107,6 @@ const Home: React.FC = () => {
 
     getFirstTwoBooksPages();
   }, []);
-
-  useEffect(() => {
-    console.log(books);
-  }, [books]);
 
   return (
     <Container>
