@@ -32,5 +32,3 @@ export const Button = styled.button<ButtonProps>`
     color: white;
   }
 `;
-
-export const Aaaa = styled.button``;
